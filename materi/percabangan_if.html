@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Percabangan If</title>
+</head>
+
+<body>
+    <button onclick="dialogBelanja();">Input Belanja</button>
+    <h3 id="informasi"></h3>
+
+    <script>
+
+        function dialogBelanja() {
+            //Deklarasi Variabel
+            var totalBelanja = prompt("Total Belanja", 0);
+
+            //Cek kondisi Menggunakan Percabangan If
+            if (totalBelanja > 100000) {
+                document.getElementById("Informasi").innerHTML = "Selamat Anda mendapatkan Hadiah";
+                return;
+            }
+            document.getElementById("Informasi").innerHTML = "Maaf, Anda belum mendapatkan Hadiah";
+        }
+
+
+    </script>
+</body>
+
+</html>

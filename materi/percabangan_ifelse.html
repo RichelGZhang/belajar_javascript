@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Percabangan If/Else</title>
+    </head>
+    <body>
+        <p>Selamat datang di aplikasi kami</p>
+        <input type="text" id="usernameUser" placeholder="Username">
+        <input type="text" id="passwordUser" placeholder="Password">
+        <button onclick="login();">Login</button>
+        <h3 id="Informasi"></h3>
+
+        <script>
+            function login(){
+                var username = document.getElementById("usernameUser").value;
+                var password = document.getElementById("passwordUser").value;
+            
+
+                if(username == "admin" && password == "javascript"){
+                    document.getElementById("Informasi").innerHTML = "Selamat anda berhasil login";
+                }else{
+                    document.getElementById("Informasi").innerHTML = "Username atau Password salah, silahkan coba lagi";
+                }
+            }
+        </script>
+    </body>
+</html>
